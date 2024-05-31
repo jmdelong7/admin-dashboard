@@ -27,16 +27,29 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, figure, p, ol, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
   margin: 0;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
   padding-inline: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -48,4 +61,31 @@ img {
 
 input {
   appearance: none;
+}
+
+/* New Styles */
+
+body {
+  font-size: 1.5rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+  grid-column: 2 / 3;
+  border: 1px solid black
+}
+
+.content {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.announcements,
+.trending {
+  grid-column: 2 / 3;
 }
