@@ -80,13 +80,16 @@ body {
 
 .header {
   grid-column: 2 / 3;
-  border: 1px solid black
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .content {
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: minmax(350px, 1fr) minmax(250px, 300px);
+  background-color: rgb(235, 235, 235);
 }
 
 .projects {
@@ -149,10 +152,6 @@ h1 {
   height: 40px;
 }
 
-.header {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
 
 .header-top {
   border: 1px solid green;
@@ -175,18 +174,29 @@ h1 {
 
 img {
   object-fit: cover;
+  border: 1px solid black;
+}
+
+.search-prof-img {
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  border: 1px solid black;
   margin-right: 15px;
   margin-left: 5px;
 }
 
 .header-bottom {
-  border: 1px solid green;
-  display: flex;
-  flex-direction: column;
+  border: 1px solid ggreen;
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr;
+  align-items: center;
+  font-weight: bold;
+}
+
+.header-big-img {
+  height: 75px;
+  width: 75px;
+  border-radius: 150px; 
 }
 
 .header-top > input{
