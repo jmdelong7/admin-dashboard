@@ -126,17 +126,27 @@ h2 {
   box-shadow: inset 7px 0 0 0 rgb(255, 145, 0);
   padding: 20px 20px 20px 32px;
   display: grid;
-  grid-template-rows: minmax(25px, 1fr) 1fr minmax(25px, 1fr);
+  grid-template-rows: minmax(25px, 1fr) 135px minmax(25px, 1fr);
 }
 
 .card-icons {
   grid-row: 3 / 4;
   display: flex;
   justify-content: right;
+  align-items: flex-end;
 }
 
 .card-icons > * {
   padding: 0 10px;
+}
+
+.card-content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 350px;
 }
 
 .share-icon {
@@ -180,11 +190,6 @@ h2 {
   display: block;
 }
 
-.svg-box {
-  height: 100px;
-  width: 100px;
-}
-
 .main-navigation,
 .sub-navigation {
   display: grid;
@@ -214,17 +219,10 @@ h2 {
   align-items: center;
   justify-content: left;
   font-weight: bold;
-  padding: 5px;
 }
 
 .header-top > input {
   max-width: 500px;
-}
-
-.search-icon-container,
-.bell-icon-container {
-  height: 50px;
-  width: 50px;
 }
 
 img {
