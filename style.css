@@ -226,7 +226,11 @@ h2 {
 }
 
 .header-top > input {
-  max-width: 500px;
+  max-width: max(150px, 500px);
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
 }
 
 img {
