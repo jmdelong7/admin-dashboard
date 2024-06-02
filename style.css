@@ -173,6 +173,12 @@ h2 {
   font-weight: bold;
 }
 
+.dashboard-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sidebar svg {
   fill: white;
 }
